@@ -7,39 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Фитнес-Трекер</h1>
-    <main>
-        <section class="exercise">
-            <div>
-                <p class="exercise-wrapper">
-                    <label class="exercise__title title" for="exercise-field">Введите упражнение:</label>
-                    <input class="exercise__field field" type="text" id="exercise-field">
+    <div class="wrapper">
+        <h1>Фитнес-Трекер</h1>
+        <main>
+            <section class="exercise">
+                <div>
+                    <p class="exercise-wrapper">
+                        <label class="exercise__title title" for="exercise-field">Введите упражнение:</label>
+                        <input class="exercise__field field" type="text" id="exercise-field">
+                    </p>
+                    <p class="number-wrapper">
+                        <label class="title number-title" for="amount-field">Введите число упражнений в подходе:</label>
+                        <input class="field number-field" type="number" id="amount-field">
+                    </p>
+                </div>
+                <p class="exercise__controls">
+                    <button class="exercise__add-button">Добавить</button>
+                    <button class="exercise__close-button">Закончить</button>
+                    <button class="exercise__save-button">Сохранить тренировку</button>
                 </p>
-                <p class="number-wrapper">
-                    <label class="title number-title" for="amount-field">Введите число упражнений в подходе:</label>
-                    <input class="field number-field" type="number" id="amount-field">
-                </p>
+            </section>
+            <div class="bottom-wrapper">
+                <section class="report">
+                    <h2>Тренировка</h2>
+                    <ul class="report__list">
+                        <!--
+                        <li class="report__item"></li>
+                        -->
+                    </ul>
+                </section>
+                <section class="statistic">
+                    <h2>Сохраненные тренировки</h2>
+                </section>
             </div>
-            <p class="exercise__controls">
-                <button class="exercise__add-button">Добавить</button>
-                <button class="exercise__close-button">Закончить</button>
-                <button class="exercise__save-button">Сохранить тренировку</button>
-            </p>
-        </section>
-        <div class="bottom-wrapper">
-            <section class="report">
-                <h2>Тренировка</h2>
-                <ul class="report__list">
-                    <!--
-                    <li class="report__item"></li>
-                    -->
-                </ul>
-            </section>
-            <section class="statistic">
-                <h2>Сохраненные тренировки</h2>
-            </section>
-        </div>
-    </main>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
